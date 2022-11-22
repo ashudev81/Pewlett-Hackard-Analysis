@@ -64,8 +64,7 @@ CREATE TABLE IF NOT EXISTS titles (
 	tital varchar NOT NULL,
 	from_date date NOT NULL,
 	to_date date NOT NULL,
-	FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
-	PRIMARY KEY (emp_no)
+	FOREIGN KEY (emp_no) REFERENCES employees (emp_no)
 	);
 
 
