@@ -61,10 +61,11 @@ CREATE TABLE IF NOT EXISTS salaries (
 -- CREATE TABLE TITLES
 CREATE TABLE IF NOT EXISTS titles (
 	emp_no INT NOT NULL,
-	tital varchar NOT NULL,
+	title varchar NOT NULL,
 	from_date date NOT NULL,
 	to_date date NOT NULL,
-	FOREIGN KEY (emp_no) REFERENCES employees (emp_no)
+	FOREIGN KEY (emp_no) REFERENCES employees (emp_no),
+    PRIMARY KEY (emp_no, title, from_date)
 	);
 
 
